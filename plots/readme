@@ -1,0 +1,60 @@
+Scripts to convert pickle files to mat files in python and plot data in matlab. Although they could have been read directly in matlab: https://www.mathworks.com/matlabcentral/answers/388744-how-can-i-open-dataset-in-matlab-which-is-pkl-format
+
+
+Structure of pickle file
+
+data_export = {
+    "stacked_plot": {
+        "wlasl": {
+            "MediaPipe": dict_data_plot_wlasl["MediaPipe"],
+            "OpenPose": dict_data_plot_wlasl["OpenPose"],
+            "WholePose": dict_data_plot_wlasl["WholePose"]
+        },
+        "pucp": {
+            "MediaPipe": dict_data_plot_pucp["MediaPipe"],
+            "OpenPose": dict_data_plot_pucp["OpenPose"],
+            "WholePose": dict_data_plot_pucp["WholePose"]
+        },
+        "aec": {
+            "MediaPipe": dict_data_plot_aec["MediaPipe"],
+            "OpenPose": dict_data_plot_aec["OpenPose"],
+            "WholePose": dict_data_plot_aec["WholePose"]
+        }
+    },
+    "left_wrist_analysis": {
+        "wlasl": df_notna_lm_lw_wlasl,
+        "pucp": df_notna_lm_lw_pucp,
+        "aec": df_notna_lm_lw_aec
+    },
+    "right_wrist_analysis": {
+        "wlasl": df_notna_lm_rw_wlasl,
+        "pucp": df_notna_lm_rw_pucp,
+        "aec": df_notna_lm_rw_aec
+    },
+    "pose_analysis": {
+        "wlasl": df_notna_lm_pose_wlasl,
+        "pucp": df_notna_lm_pose_pucp,
+        "aec": df_notna_lm_pose_aec
+    },
+    "face_analysis": {
+        "wlasl": df_notna_lm_face_wlasl,
+        "pucp": df_notna_lm_face_pucp,
+        "aec": df_notna_lm_face_aec
+    },
+    "left_hand_analysis": {
+        "wlasl": df_notna_lm_lh_wlasl,
+        "pucp": df_notna_lm_lh_pucp,
+        "aec": df_notna_lm_lh_aec
+    },
+    "right_hand_analysis": {
+        "wlasl": df_notna_lm_rh_wlasl,
+        "pucp": df_notna_lm_rh_pucp,
+        "aec": df_notna_lm_rh_aec
+    },
+}
+
+1) Python: importPlotData.py 
+
+2) Matlab: 
+- barPlots.mat reads the section stacked_plot for the bar plot (in-range, missing and out-of-range landmarks)
+- linePlots.mat reads the section left_wrist_analysis, right_wrist_analysis, etc. to plot the lines (% of frames with in-range input)
