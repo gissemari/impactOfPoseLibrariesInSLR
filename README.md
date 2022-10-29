@@ -1,6 +1,7 @@
 # Impact of Pose Libraries in SLR
 
-This repository have all the data that WE have been used to write our paper "NAME"
+This repository have all the data that we have been used to write our paper "Impact of Pose Estimation Models for landmark-based
+Sign Language Recognition"
 
 # Scrips
 
