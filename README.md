@@ -6,7 +6,7 @@ This repository have all the data that WE have been used to write our paper "NAM
 
 ## To generate some of the paper figures
 
-Plot folder
+The python and matlab scripts used for Ploting some figures of our paper are placed in "plots" folder
 
 # Repositories used
 
