@@ -1,7 +1,7 @@
 # Impact of Pose Libraries in SLR
 
 This repository have all the data that we have been used to write our paper "Impact of Pose Estimation Models for landmark-based
-Sign Language Recognition"
+Sign Language Recognition". The drive with the data is in: https://drive.google.com/drive/folders/1vQ2GOD3EmQ33dHjavvNUgU1KDDqFl3fc?usp=sharing
 
 # Scripts
 
